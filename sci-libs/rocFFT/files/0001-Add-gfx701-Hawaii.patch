@@ -1,0 +1,25 @@
+From 197120209734299f35508f94ccd8266df51ef8b0 Mon Sep 17 00:00:00 2001
+From: "Luke A. Guest" <laguest@archeia.com>
+Date: Thu, 3 Oct 2019 15:02:31 +0100
+Subject: [PATCH] Add gfx701 - Hawaii.
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9f1e999..d70fd1c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -155,7 +155,7 @@ find_package( hip REQUIRED CONFIG PATHS /opt/rocm )
+ find_package( CUDA QUIET )
+ 
+ # CMake list of machine targets
+-set( AMDGPU_TARGETS gfx803;gfx900;gfx906;gfx908 CACHE STRING "List of specific machine types for library to target" )
++set( AMDGPU_TARGETS gfx701;gfx803;gfx900;gfx906;gfx908 CACHE STRING "List of specific machine types for library to target" )
+ 
+ add_subdirectory( library )
+ 
+-- 
+2.23.0
+
